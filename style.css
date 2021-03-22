@@ -2,12 +2,12 @@ body {
     background: blue;
     margin: 0;
     padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #navbar {
     position: fixed; 
     top: 0;
-    /* left: 0; */
     width: 100%;
     background-color: #660909;
 }
@@ -19,9 +19,10 @@ body {
 a {
     text-decoration: none;
     display: block;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     color: #B3B134;
+    font-size: 20px;
 }
 
 a:hover {
@@ -43,7 +44,6 @@ ul {
     width: 100%;
     height: 100vh;
     background-color: #B3B134;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #0E4466;
     text-shadow: 12px 12px 45px #660909;
 }
@@ -75,6 +75,25 @@ p {
 
 #contact-me {
     background-color: #660909;
+    color: #B3B134;
     width: 100%;
-    height: 200px;
+    padding: 10px;
+    /* height: 200px; */
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-deet {
+    /* background-color: floralwhite; temporary to arrange contact divs */
+    padding: 5px;
+    margin: 10px 10%;
 }
