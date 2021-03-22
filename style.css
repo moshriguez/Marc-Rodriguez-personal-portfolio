@@ -68,6 +68,22 @@ h1 {
     padding: 10px 0;
 }
 
+#img-box {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#bio {
+    margin: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
 .flex-cont-for-rows {
     display: flex;
     flex-direction: row;
