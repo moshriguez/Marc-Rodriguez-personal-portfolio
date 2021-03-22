@@ -54,7 +54,7 @@ h1 {
     margin:0;
 }
 
-p {
+#welcome-section p {
     text-align: center;
     font-size: 30px;
     margin: 0;
@@ -62,9 +62,10 @@ p {
 }
 
 #about-me {
-    background-color: #B3B134;
+    /* background-color: #B3B134; */
+    background-color: white;
     width: 100%;
-    height: 200px;
+    padding: 10px 0;
 }
 
 .flex-cont-for-rows {
