@@ -10,6 +10,8 @@ body {
     top: 0;
     width: 100%;
     background-color: #660909;
+    background-image: linear-gradient(to bottom, #660909 75%, #360505 100%);
+    /* border-bottom: 2px solid #0E4466; */
 }
 
 #navbar ul li {
@@ -19,7 +21,7 @@ body {
 a {
     text-decoration: none;
     display: block;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     color: #B3B134;
     font-size: 20px;
@@ -27,7 +29,7 @@ a {
 
 a:hover {
     background-color: #0E4466;
-    box-shadow: 0px 30px 100px #0E4466;
+    /* box-shadow: 0px 30px 100px #0E4466; */
 }
 
 ul {
@@ -44,6 +46,7 @@ ul {
     width: 100%;
     height: 100vh;
     background-color: #B3B134;
+    background-image: linear-gradient(to bottom, #B3B134 95%, #b22222 100%);
     color: #0E4466;
     text-shadow: 12px 12px 45px #660909;
 }
@@ -61,15 +64,24 @@ h1 {
     font-style: italic;
 }
 
+.flex-cont-for-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 #about-me {
-    /* background-color: #B3B134; */
-    background-color: white;
+    background-color: #B3B134;
+    background-image: linear-gradient(to bottom, #b22222 0%, #B3B134 2%, #B3B134 90%, #b22222 100%);
     width: 100%;
     padding: 10px 0;
+    /* display: none; */
 }
 
 #img-box {
-    width: 100%;
+    width: 20%;
+    margin: auto 0;
 }
 
 img {
@@ -77,21 +89,30 @@ img {
 }
 
 #bio {
-    margin: 10px;
+    width: 60%;
+    margin: 0 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 25px;
 }
 
 h3 {
     font-size: 30px;
+    margin: 20px 0;
 }
 
-.flex-cont-for-rows {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#spotify-link {
+    width: 10%;
+    margin: auto 0;
+}
+
+#spotify-link a {
+    color: #0E4466;
 }
 
 #projects {
     background-color: #b22222;
+    background-image: linear-gradient(to bottom, #b22222 80%, #660909 100%);
     width: 100%;
     padding: 10px 0;
     color: #0E4466;
@@ -110,6 +131,7 @@ h3 {
 
 #contact-me {
     background-color: #660909;
+    background-image: linear-gradient(to bottom, #660909 90%, #360505 100%);
     color: #B3B134;
     width: 100%;
     padding: 10px 0;
