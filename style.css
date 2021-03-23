@@ -5,13 +5,20 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Navigation bas styling*/
+
 #navbar {
     position: fixed; 
     top: 0;
     width: 100%;
     background-color: #660909;
     background-image: linear-gradient(to bottom, #660909 75%, #360505 100%);
-    /* border-bottom: 2px solid #0E4466; */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul li {
@@ -23,20 +30,17 @@ a {
     display: block;
     padding: 10px 20px;
     text-align: center;
-    color: #B3B134;
+    color: #C9B730;
     font-size: 20px;
 }
 
 a:hover {
     background-color: #0E4466;
+    background-image: linear-gradient(to bottom, #0E4466 75%, #072030 100%);
     /* box-shadow: 0px 30px 100px #0E4466; */
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+/* Welcome Section */ 
 
 #welcome-section {
     display: flex;
@@ -45,16 +49,16 @@ ul {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #B3B134;
-    background-image: linear-gradient(to bottom, #B3B134 95%, #b22222 100%);
-    color: #0E4466;
-    text-shadow: 12px 12px 45px #660909;
+    background-color: #c9b730;
+    /* background-image: linear-gradient(to bottom, #B3B134 95%, #b22222 100%); */
+    /* text-shadow: 12px 12px 45px #0e4466; */
 }
 
 h1 {
     text-align: center;
     font-size: 60px;
     margin:0;
+    color: #0E4466;
 }
 
 #welcome-section p {
@@ -62,7 +66,10 @@ h1 {
     font-size: 30px;
     margin: 0;
     font-style: italic;
+    color: #660909;
 }
+
+/* The rest of the sections use this flexbox config */
 
 .flex-cont-for-rows {
     display: flex;
@@ -71,12 +78,14 @@ h1 {
     align-content: center;
 }
 
+/* About Me Section */
+
 #about-me {
-    background-color: #B3B134;
-    background-image: linear-gradient(to bottom, #b22222 0%, #B3B134 2%, #B3B134 90%, #b22222 100%);
+    background-color: #C9B730;
+    /* background-image: linear-gradient(to bottom, #b22222 0%, #B3B134 2%, #B3B134 90%, #b22222 100%); */
     width: 100%;
-    padding: 10px 0;
-    /* display: none; */
+    padding: 50px 0;
+    display: none;
 }
 
 #img-box {
@@ -89,9 +98,9 @@ img {
 }
 
 #bio {
-    width: 60%;
+    width: 70%;
     margin: 0 10px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: rgb(255, 255, 255, 0.25);
     border-radius: 25px;
 }
@@ -101,51 +110,55 @@ h3 {
     margin: 20px 0;
 }
 
-#spotify-link {
-    width: 10%;
-    margin: auto 0;
-}
-
-#spotify-link a {
-    color: #0E4466;
-}
+/* Projects Section */ 
 
 #projects {
-    background-color: #b22222;
-    background-image: linear-gradient(to bottom, #b22222 80%, #660909 100%);
+    background-color: #660909;
+    /* background-image: linear-gradient(to bottom, #b22222 80%, #660909 100%); */
     width: 100%;
     padding: 10px 0;
-    color: #0E4466;
+    color: #C9B730;
 }
 
-.project-box {
+.project-tile {
     width: 20%;
     height: 200px;
     margin: 10px 5%;
     background-color: floralwhite;
+    border-radius: 20px;
 }
 
-.project-box p {
-    /* margin: 83px auto; */
+.project-tile p {
+    /* display: none; */
+    text-align: center;
 }
+
+/* Contact Me Section */
 
 #contact-me {
     background-color: #660909;
+    border-top: 10px double #C9B730;
     background-image: linear-gradient(to bottom, #660909 90%, #360505 100%);
-    color: #B3B134;
+    color: #C9B730;
     width: 100%;
-    padding: 10px 0;
-    /* height: 200px; */
 }
 
-h2 {
+h2 { /* affects header in projects section too */
     margin: 10px;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
 }
 
-.contact-deet {
+.profile-link {
     /* background-color: floralwhite; temporary to arrange contact divs */
     padding: 5px;
-    margin: 10px 10%;
+    margin: 10px 5%;
+}
+
+.profile-link a {
+    border-radius: 10px;
+}
+
+.fa {
+    font-size: 30px;
 }

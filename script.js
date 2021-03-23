@@ -1,4 +1,17 @@
-/*const h2 = document.createElement('h2');
-h2.textContent = "This content added by JavaScript";
+const aboutMeLink = document.getElementById('about-me-link');
+const aboutMe = document.getElementById('about-me');
+const marcRodriguez = document.getElementById('marc-rod');
 
-document.querySelector('body').appendChild(h2);*/
+function showAboutMe() {
+
+    function unhideSection() {
+        aboutMe.style.display = 'block';
+    }
+
+    if (aboutMe.style.display === '') {
+        aboutMeLink.addEventListener('click', unhideSection); 
+        marcRodriguez.addEventListener('click', unhideSection);
+    }
+
+}
+showAboutMe();

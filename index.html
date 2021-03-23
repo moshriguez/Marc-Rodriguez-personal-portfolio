@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">  
+    <!-- link to make icons work -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css"> 
     <title>My Website</title>
   </head>
   <body>
@@ -10,13 +13,15 @@
         <ul>
             <li><a href="#contact-me">Contact Me</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#about-me">About Me</a></li>
+            <li><a id="about-me-link" href="#about-me">About Me</a></li>
         </ul>
     </nav>
     
     <section id="welcome-section">
-        <h1>Marc Rodriguez</h1>
-        <p>an aspiring software developer</p>
+        <div id="marc-rod">
+            <h1>Marc Rodriguez</h1>
+            <p>an aspiring software developer</p>
+        </div>
     </section>
     
     <section id="about-me">
@@ -28,13 +33,10 @@
                 <h3>About Me</h3>
                 <p>Hello! I'm Marc Rodriguez. I'm originally from Augusta, GA. The past decade of my life has been quite a journey for me. I got to travel to Seoul, South Kore and Taipei, Taiwan to teach English as a second language. I embarked on 2 multi-month road trips with my wife through New Zealand and the USA. After all this traveling, we have decided to settle down in Seattle because the Pacific Northwest is stunning. I am now ready to embark on my next adventure: <strong>Learning Software Development.</strong></p>
                 <h3>Hobbies</h3>
-                <p>Music has always been an important part of my life. It calms me. I find that no matter what I'm going through, the right music will help it feel alright. I generally have some music playing if I am at home. I like music of all kinds. Check out my Spotify account to the right to check out what I have been listening to lately.</p>
+                <p>Music has always been an important part of my life. It calms me. I find that no matter what I'm going through, the right music will help it feel alright. I generally have some music playing if I am at home. I like music of all kinds. Check out my Spotify account at the bottom of the page to check out what I have been listening to lately.</p>
                 <p>I try to go to as many gigs as I can afford to see. The past year has been hard for gigs. There were so many good gigs coming to Seattle in 2020. :(</p>
                 <p>Not only do I enjoy listening to music, but I have been playing the drums since I was 10 years old. I have a weekly jam session with some old friends on Friday nights. It's a nice way to unwind at the end of the work week.</p>
                 <p>I also enjoy hiking and camping. The Pacific Northwest is a great place to walk about. I also enjoy reading comic books, playing table top games, cooking and traveling.</p>
-            </div>
-            <div id="spotify-link">
-                <a href="">Check out what I'm listening to...</a>
             </div>
         </div>
     </section>
@@ -42,13 +44,13 @@
     <section id="projects">
         <h2>Check out some of my projects!</h2>
         <div class="flex-cont-for-rows">
-            <div class="project-box">
-                <a href="">Form</a>
+            <div class="project-tile">
+                <a href="https://codepen.io/xvxmarsexvx/full/ExNQPqe" target="_blank">A Survey</a>
             </div>
-            <div class="project-box">
-                <a href="">Intro<br>to<br>Basic<br>Algebra</a>
+            <div class="project-tile">
+                <a href="https://codepen.io/xvxmarsexvx/full/MWbXYeN" target="_blank">Intro<br>to<br>Basic<br>Algebra</a>
             </div>
-            <div class="project-box">
+            <div class="project-tile">
                 <a href="">Wanna see more?</a>
                 <p>More to come soon!<br>
                     Stay tuned!</p>
@@ -59,11 +61,14 @@
     <section id="contact-me">
         <h2>Contact Me</h2>
         <div class="flex-cont-for-rows">
-            <div class="contact-deet">
-                <a href="https://github.com/moshriguez" target="_blank">GitHub</a>
+            <div class="profile-link">
+                <a href="https://github.com/moshriguez" target="_blank"><i class="fa fa-github"></i> GitHub</a>
             </div>
-            <div class="contact-deet">
-                <a href="mailto:marc.herman.rodriguez@gmail.com">Email</a>
+            <div class="profile-link">
+                <a href="mailto:marc.herman.rodriguez@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+            </div>
+            <div class="profile-link">
+                <a href="https://open.spotify.com/user/xvxmarsexvx?si=de29a56ecbd9469e" target="_blank" title="Check out what I'm listening to..."><i class="fa fa-spotify"></i> Spotify</a>
             </div>
         </div>
     </section>
