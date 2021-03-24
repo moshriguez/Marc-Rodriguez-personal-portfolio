@@ -142,10 +142,12 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .project-tile p {
-    /* display: none; */
+    display: none;
     text-align: center;
 }
 
