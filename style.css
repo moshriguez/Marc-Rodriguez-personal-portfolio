@@ -2,7 +2,7 @@ body {
     background: blue;
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Navigation bas styling*/
@@ -54,6 +54,10 @@ a:hover {
     /* text-shadow: 12px 12px 45px #0e4466; */
 }
 
+#marc-rod {
+    cursor: pointer;
+}
+
 h1 {
     text-align: center;
     font-size: 60px;
@@ -103,6 +107,7 @@ img {
     padding: 5px 10px;
     background-color: rgb(255, 255, 255, 0.25);
     border-radius: 25px;
+    line-height: 1.25;
 }
 
 h3 {

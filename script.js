@@ -6,6 +6,7 @@ function showAboutMe() {
 
     function unhideSection() {
         aboutMe.style.display = 'block';
+        marcRodriguez.style.cursor = 'auto';
     }
 
     if (aboutMe.style.display === '') {
