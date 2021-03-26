@@ -49,6 +49,7 @@ a:hover {
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding-top: 0;
     background-color: #c9b730;
     /* background-image: linear-gradient(to bottom, #B3B134 95%, #b22222 100%); */
     /* text-shadow: 12px 12px 45px #0e4466; */
@@ -179,4 +180,64 @@ h2 { /* affects header in projects section too */
 
 .fa {
     font-size: 30px;
+}
+
+@media (max-width: 320px) {
+    #navbar a {
+        padding: 10px 9px;
+    }
+    h1 {
+        font-size: 43px;
+    }
+    #welcome-section p {
+        font-size: 22px;
+    }
+    .flex-cont-for-rows {
+        flex-direction: column;
+    }
+    #img-box {
+        width: 100%;
+    }
+
+    #bio, .project-tile {
+        width: 90%;
+        margin: 5px auto;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+
+    .project-tile {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-cont-for-rows {
+        flex-direction: column;
+    }
+    #img-box {
+        width: 100%;
+    }
+
+    #bio, .project-tile {
+        width: 90%;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-cont-for-rows {
+        flex-direction: column;
+    }
+    #img-box {
+        width: 100%;
+    }
+
+    #bio, .project-tile {
+        width: 90%;
+    }
 }

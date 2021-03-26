@@ -9,6 +9,7 @@ function showAboutMe() {
         aboutMe.style.display = 'block';
         marcRodriguez.style.cursor = 'auto';
         welcomeSection.style.height = '200px';
+        welcomeSection.style.paddingTop = '50px';
     }
 
     if (aboutMe.style.display === '') {
