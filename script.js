@@ -19,3 +19,17 @@ function showAboutMe() {
 
 }
 showAboutMe();
+
+const wannaSeeMore = document.getElementById('wanna-see-more');
+const moreToCome = document.querySelector('.project-tile p:last-child');
+
+function showMoreToCome() {
+    function unhideString() {
+        moreToCome.style.display = 'block';
+        wannaSeeMore.style.cursor = 'auto';
+    }
+
+    wannaSeeMore.addEventListener('click', unhideString);
+}
+
+showMoreToCome();

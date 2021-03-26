@@ -34,10 +34,9 @@ a {
     font-size: 20px;
 }
 
-a:hover {
+a:hover, #wanna-see-more:hover {
     background-color: #0E4466;
     background-image: linear-gradient(to bottom, #0E4466 75%, #072030 100%);
-    /* box-shadow: 0px 30px 100px #0E4466; */
 }
 
 /* Welcome Section */ 
@@ -51,8 +50,6 @@ a:hover {
     height: 100vh;
     padding-top: 0;
     background-color: #c9b730;
-    /* background-image: linear-gradient(to bottom, #B3B134 95%, #b22222 100%); */
-    /* text-shadow: 12px 12px 45px #0e4466; */
 }
 
 #marc-rod {
@@ -87,7 +84,6 @@ h1 {
 
 #about-me {
     background-color: #C9B730;
-    /* background-image: linear-gradient(to bottom, #b22222 0%, #B3B134 2%, #B3B134 90%, #b22222 100%); */
     width: 100%;
     padding: 50px 0;
     display: none;
@@ -134,6 +130,8 @@ h3 {
     margin: 10px 5%;
     background-color: rgb(255, 255, 255, 0.25);
     border-radius: 20px;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .project-tile a {
@@ -148,8 +146,16 @@ h3 {
 }
 
 .project-tile p {
-    display: none;
     text-align: center;
+    margin: 15px 0;
+}
+
+#wanna-see-more {
+    cursor: pointer;
+}
+
+.project-tile p:last-child {
+    display: none;
 }
 
 /* Contact Me Section */
@@ -181,6 +187,8 @@ h2 { /* affects header in projects section too */
 .fa {
     font-size: 30px;
 }
+
+/* styling for different size screens */
 
 @media (max-width: 320px) {
     #navbar a {
