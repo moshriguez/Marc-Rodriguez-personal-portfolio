@@ -214,6 +214,15 @@ h2 { /* affects header in projects section too */
 }
 
 @media (max-width: 480px) {
+    #navbar a {
+        padding: 10px 9px;
+    }
+    h1 {
+        font-size: 43px;
+    }
+    #welcome-section p {
+        font-size: 22px;
+    }
     .flex-cont-for-rows {
         flex-direction: column;
     }
@@ -229,7 +238,7 @@ h2 { /* affects header in projects section too */
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .flex-cont-for-rows {
         flex-direction: column;
     }
@@ -239,5 +248,9 @@ h2 { /* affects header in projects section too */
 
     #bio, .project-tile {
         width: 90%;
+    }
+
+    #bio {
+        margin: auto;
     }
 }
